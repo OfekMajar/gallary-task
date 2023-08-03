@@ -68,51 +68,58 @@ h1 {
   z-index: 10;
 }
 .slider-1 {
-  animation: slider-animation-1 15s 3;
+  /* animation: slider-animation-1 15s 1; */
 }
 .slider-2 {
   background-image: url(.//images/img2.webp);
-  animation: slider-animation-2 15s 3;
+  /* animation: slider-animation-2 15s 1; */
 }
 .slider-3 {
   background-image: url(.//images/img3.jpg);
-  animation: slider-animation-3 15s 3;
+  /* animation: slider-animation-3 15s 1; */
 }
 .slider-4 {
   background-image: url(.//images/img4.jpeg);
-  animation: slider-animation-4 15s 3;
+  /* animation: slider-animation-4 15s 1; */
 }
 .slider-5 {
   background-image: url(.//images/img5.jpg);
-  animation: slider-animation-5 15s 3;
+  /* animation: slider-animation-5 15s 1; */
 }
 .slider-6 {
   background-image: url(.//images/img6.avif);
-  animation: slider-animation-6 15s 3;
+  /* animation: slider-animation-6 15s 1; */
 }
 .slider-7 {
   background-image: url(.//images/img7.jpg);
-  animation: slider-animation-7 15s 3;
+  /* animation: slider-animation-7 15s 1; */
 }
 
 .slider-8 {
   background-image: url(.//images/img8.webp);
-  animation: slider-animation-8 15s 3;
+  /* animation: slider-animation-8 15s 1; */
 }
 .slider-9 {
   background-image: url(.//images/img9.webp);
-  animation: slider-animation-9 15s 3;
+  /* animation: slider-animation-9 15s 1; */
 }
 
 .move-to-right {
+  width: 21px;
+  height: 24px;
   position: absolute;
   right: 2vh;
-  bottom: 0vh;
+  bottom: -4vh;
 }
 .move-to-left {
   position: absolute;
   left: 2vw;
-  bottom: 0vh;
+  bottom: -4vh;
+  width: 21px;
+  height: 24px;
+}
+.move-to-left::after:hover + slider{
+  animation: slider-animation-1 15s 3;
 }
 .move-to-right:hover ~ .slider-1 {
   animation: slider-animation-1 15s 3;
